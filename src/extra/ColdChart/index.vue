@@ -74,7 +74,7 @@
     },
     mounted() {
       if (this.option) {
-        echarts.registerTheme("cold-echarts-theme", theme);
+        echarts.registerTheme("lowcold-echarts-theme", theme);
         this.init();
       }
     },

@@ -1,12 +1,12 @@
 <template>
   <h2 style="margin-bottom: 40px">Echarts图表示例</h2>
-  <cold-chart
+  <lowcold-chart
     style="width: 100%"
     :init-options="initOptions"
     :option="option"
-    theme="cold-echarts-theme"
+    theme="lowcold-echarts-theme"
   />
-  <div class="cold-tips">
+  <div class="lowcold-tips">
     更多图表示例请参考
     <a href="https://echarts.apache.org/examples/zh/index.html" target="_blank">
       ECharts
@@ -17,12 +17,12 @@
 
 <script>
   import { defineComponent, reactive, toRefs } from "vue";
-  import ColdChart from "@/extra/ColdChart/index.vue";
+  import lowcoldChart from "@/extra/lowcoldChart/index.vue";
 
   export default defineComponent({
     name: "Echarts",
     components: {
-      ColdChart,
+      lowcoldChart,
     },
     setup() {
       const state = reactive({

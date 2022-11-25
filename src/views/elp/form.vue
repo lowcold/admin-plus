@@ -54,7 +54,7 @@
       <el-button type="primary" @click="onSubmit">保存</el-button>
     </el-form-item>
   </el-form>
-  <div class="cold-tips">
+  <div class="lowcold-tips">
     详情请查看element-plus的表单
     <a
       href="https://element-plus.gitee.io/zh-CN/component/form.html"

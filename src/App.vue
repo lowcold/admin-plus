@@ -1,15 +1,15 @@
 <template>
-  <div class="cold" v-if="$route.meta.layout">
+  <div class="lowcold" v-if="$route.meta.layout">
     <layout-header />
-    <div class="cold-bottom">
+    <div class="lowcold-bottom">
       <layout-menu />
-      <div class="cold-content">
-        <div class="cold-cont">
-          <div class="cold-scroll">
+      <div class="lowcold-content">
+        <div class="lowcold-cont">
+          <div class="lowcold-scroll">
             <router-view />
           </div>
         </div>
-        <div class="cold-by">Copyright © {{ year }} 蚂蚁雄兵</div>
+        <div class="lowcold-by">Copyright © {{ year }} 蚂蚁雄兵</div>
       </div>
     </div>
   </div>

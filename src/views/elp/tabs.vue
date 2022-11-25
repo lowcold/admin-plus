@@ -6,7 +6,7 @@
     <el-tab-pane label="Role" name="third">Role</el-tab-pane>
     <el-tab-pane label="Task" name="fourth">Task</el-tab-pane>
   </el-tabs>
-  <div class="cold-tips">
+  <div class="lowcold-tips">
     详情请查看element-Tabs标签
     <a
       href="https://element-plus.gitee.io/zh-CN/component/tabs.html"

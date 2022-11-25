@@ -7,7 +7,7 @@
   import "font-awesome/css/font-awesome.min.css";
   import { defineComponent, onMounted, reactive, toRefs } from "vue";
   export default defineComponent({
-    name: "ColdIcon",
+    name: "lowcoldIcon",
     props: {
       name: {
         type: String,

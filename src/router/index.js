@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 
 import store from "@/store";
-import cold from "@/config/cold.js";
+import lowcold from "@/config/lowcold.js";
 import { getRouter } from "@/axios/api.js";
 
 const staticRoute = [
@@ -199,7 +199,7 @@ const restRouter = (routes) => {
   }
 };
 
-if (cold.auth == "admin") {
+if (lowcold.auth == "admin") {
   // 判断是否登录
   if (store.state.login) {
     // 获取后端路由

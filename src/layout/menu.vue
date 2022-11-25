@@ -1,17 +1,17 @@
 <template>
-  <div class="cold-menu" @mouseleave="getData">
-    <div class="cold-menu-nav">
+  <div class="lowcold-menu" @mouseleave="getData">
+    <div class="lowcold-menu-nav">
       <div
         :class="item.class"
         v-for="item in menu"
         @mousemove="menuMouseMove(item)"
         :key="item"
       >
-        <cold-icon :name="item.icon" color="#ff000" />
+        <lowcold-icon :name="item.icon" color="#ff000" />
         {{ item.title }}
       </div>
     </div>
-    <div class="cold-menu-ul">
+    <div class="lowcold-menu-ul">
       <el-tree
         ref="tree"
         :data="nav"
@@ -23,7 +23,7 @@
         @node-click="nodeClick"
       >
         <template #default="{ node, data }">
-          <cold-icon :name="data.icon" size="14" />
+          <lowcold-icon :name="data.icon" size="14" />
           <span>{{ node.label }}</span>
         </template>
       </el-tree>
@@ -40,9 +40,9 @@
     toRefs,
     watch,
   } from "vue";
-  import coldIcon from "./coldIcon.vue";
+  import lowcoldIcon from "./lowcoldIcon.vue";
   export default defineComponent({
-    components: { coldIcon },
+    components: { lowcoldIcon },
     name: "Layout",
     setup() {
       const { proxy } = getCurrentInstance();

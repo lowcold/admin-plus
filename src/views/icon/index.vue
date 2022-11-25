@@ -1,5 +1,5 @@
 <template>
-  <div class="cold-search">
+  <div class="lowcold-search">
     <el-form :inline="true" :model="queryForm">
       <el-form-item label="关键词(英文)">
         <el-input v-model="queryForm.key" placeholder="Approved by" />
@@ -9,7 +9,7 @@
       </el-form-item>
     </el-form>
   </div>
-  <div class="cold-icons">
+  <div class="lowcold-icons">
     <el-row gutter="10">
       <el-col
         class="icon-item"
@@ -18,12 +18,12 @@
         :md="6"
         :lg="4"
         :xl="2"
-        v-for="item in coldIcons"
+        v-for="item in lowcoldIcons"
         :key="item"
         @click="copy(item)"
       >
-        <div class="cold-icon">
-          <cold-icon :name="item" size="22" />
+        <div class="lowcold-icon">
+          <lowcold-icon :name="item" size="22" />
         </div>
         <p>{{ item }}</p>
       </el-col>
@@ -33,12 +33,12 @@
 
 <script>
   import { defineComponent, reactive, toRefs } from "vue";
-  import { icons } from "@/config/coldIcon.js";
-  import coldIcon from "@/layout/coldIcon.vue";
+  import { icons } from "@/config/lowcoldIcon.js";
+  import lowcoldIcon from "@/layout/lowcoldIcon.vue";
   import { ElMessage } from "element-plus";
   export default defineComponent({
     name: "Icon",
-    components: { coldIcon },
+    components: { lowcoldIcon },
     setup() {
       const state = reactive({
         queryForm: {
@@ -46,7 +46,7 @@
           key: "",
           limit: 10,
         },
-        coldIcons: icons,
+        lowcoldIcons: icons,
       });
 
       const copy = (text) => {
@@ -72,9 +72,9 @@
               searchIcon.push(map);
             }
           });
-          state.coldIcons = searchIcon;
+          state.lowcoldIcons = searchIcon;
         } else {
-          state.coldIcons = icons;
+          state.lowcoldIcons = icons;
         }
       };
 

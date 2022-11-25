@@ -1,12 +1,12 @@
 <template>
-  <div class="cold-header">
+  <div class="lowcold-header">
     <div class="logo">
       <img src="@/assets/img/logo.png" />
     </div>
     <div class="head">
       <div class="hello">{{ hello }}，尊敬的 {{ $store.state.username }}</div>
       <div class="outLogin" @click="outLogin">
-        <cold-icon name="sign-out" />
+        <lowcold-icon name="sign-out" />
         退出登录
       </div>
     </div>
@@ -15,10 +15,10 @@
 
 <script>
   import { getCurrentInstance, defineComponent, reactive, toRefs } from "vue";
-  import coldIcon from "@/layout/coldIcon.vue";
+  import lowcoldIcon from "@/layout/lowcoldIcon.vue";
   export default defineComponent({
     name: "LayoutHeader",
-    components: { coldIcon },
+    components: { lowcoldIcon },
     setup() {
       let getTimeState = () => {
         // 获取当前时间

@@ -26,7 +26,7 @@
     @size-change="sizeChange"
     @current-change="currentChange"
   />
-  <div class="cold-tips">
+  <div class="lowcold-tips">
     详情请查看element-Table的表单
     <a
       href="https://element-plus.gitee.io/zh-CN/component/table.html"
